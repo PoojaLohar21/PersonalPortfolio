@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pooja Lohar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    .profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+  background-color: white; /* Optional: for contrast */
+}
+
+
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #6a11cb;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .progress {
+      background-color: #ddd;
+      height: 20px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      color: white;
+      text-align: center;
+      background: #6a11cb;
+      width: 0;
+      animation: grow 2s forwards;
+    }
+
+    @keyframes grow {
+      to {
+        width: var(--width);
+      }
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #6a11cb;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2575fc;
+    }
+
+    .certificate-img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 10px;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      section {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pooja Prakash Lohar</h1>
+    <p>Student | Developer | Learner</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <img src="myphoto.jpg" alt="My Photo" class="profile-img">
+    <ul>
+      <li>Hello! I'm <strong>Pooja Prakash Lohar.</strong> I am a passionate, enthusiastic IT student excited about web development, creative problem-solving, and continuous learning.</li>
+      <li>My goal is to continue learning and growing as a developer while contributing to meaningful projects. I’m eager to gain real-world experience and take on new challenges that help me improve my technical and soft skills.</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <ul>
+      <li>I am currently pursuing a Diploma in Information Technology from MSBTE. I love exploring new technologies and building user-friendly websites.</li>
+      <li>Languages: C, C++, Java, Python</li>
+      <li>Web: HTML, CSS</li>
+      <li>Other Interests: UI/UX, Databases, Software Projects</li>
+      <li>I have developed foundational knowledge in programming languages like C, C++, Java, Python, and web technologies such as HTML, CSS. I also have hands-on experience with database management and basic software development projects.</li>
+      <li>I enjoy building responsive websites and exploring areas like UI/UX design, database systems, and software development. My goal is to continuously grow my technical skills and contribute to real-world projects that make an impact.</li>
+      <li>I am a self-motivated learner and always eager to take on new challenges that help me improve both personally and professionally.</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress"><div class="progress-bar" style="--width: 90%;">90%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress"><div class="progress-bar" style="--width: 85%;">85%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="progress"><div class="progress-bar" style="--width: 65%;">65%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Java Programming</div>
+      <div class="progress"><div class="progress-bar" style="--width: 75%;">75%</div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>🌐 Personal Portfolio Website (HTML & CSS)</li>
+      <li>🍽️ Restaurant Website (Static)</li>
+      <li>💻 Product Landing Page</li>
+      <li>✈️ Travel Website Homepage</li>
+      <li>🎓 Tribute Page</li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li><b>Infosys Springboard –</b></li>
+    </ul>
+    <img src="infosys.jpg" alt="Infosys Logo" class="certificate-img"><br>
+    <ul>
+      <li><b>C Programming</b></li>
+      <li><b>HTML</b></li>
+      <li><b>CSS</b></li>
+      <li><b>Python Programming</b></li>
+      <li><b>Java Programming</b></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Pooja Prakash Lohar. All rights reserved.
+  </footer>
+
+</body>
+</html>
